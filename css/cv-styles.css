@@ -1,0 +1,155 @@
+.container {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.row {
+	margin: 0;
+}
+
+#daniel-nav {
+	
+}
+
+.content {
+
+	background-color: DarkGray;
+	background-size: cover;
+	width: 100%;
+}
+
+#home {
+	background-image:url("../images/space.jpg");
+	background-attachment:fixed;
+	text-align: center;
+	height: 1000px;
+}
+
+@media screen and (min-width: 600px) {
+	.content {
+		min-height: 100vh !important;
+	}
+	
+	#about-img {
+		margin: 80px;
+		top: 100px;
+		width: 100% !important;
+	}
+	
+	.portfolio-row {
+		margin: 0 auto;
+		max-width: 1300px;
+		display: flex;
+	}
+}
+
+#welcome {
+	position: relative;
+	top: 200px;
+	text-align:center;
+	color: Yellow;
+	margin: 0 auto;
+	max-width:1000px;
+}
+
+#welcome a {
+	color: #DAA520;
+	font-style: underline;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+p {
+	font-size: 1.2em;
+}
+
+.social-btns {
+	position:relative;
+	font-size: 1.6em;
+	min-width: 200px;
+	text-align: center;
+	top: 250px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+#about {
+	background-attachment:fixed;
+	background-size: cover;
+	max-width: 1600px;
+	text-align: justify;
+	padding: 30px;
+	margin: 0;
+}
+
+#about-img-div {
+	width: 100%;
+
+}
+
+#about img {
+	position: relative;
+	display: block;
+	width: 300px;
+	height: auto;
+	margin: auto;
+}
+
+#about h1 {
+	text-align: center;
+	font-size: 3em;
+}
+
+#portfolio {
+	background-image:url("../images/universe.jpg");
+	background-attachment:fixed;
+	text-align: center;
+	margin: 0;
+}
+
+#portfolio-header {
+	margin: 50px 0px 50px 0px;
+	text-shadow: 0 0 3px #fff;
+
+}
+
+.portfolio-row {
+	display: block;
+}
+
+
+.portfolio-item {
+	position: relative;
+	margin: 0 auto;
+	margin: 50px 10px 50px 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	max-width: 100%;
+	flex: 1;
+	padding: 15px;
+	border-radius: 15px;
+	min-height: 290px;
+}
+
+.portfolio-item a {
+	color: white;
+	text-decoration: none;
+}
+
+.portfolio-item img {
+	border-radius: 10px;
+}
+
+#contact {
+	background-attachment:fixed;
+	background-size: cover;
+	text-align: justify;
+	padding: 30px;
+	margin: 0;
+}
+
+#contact-header {
+	text-align: center;
+}
