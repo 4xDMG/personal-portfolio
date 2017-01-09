@@ -4,6 +4,10 @@
 	padding: 0;
 }
 
+body {
+	padding-top: 50px;
+}
+
 .row {
 	margin: 0;
 }
@@ -13,7 +17,6 @@
 }
 
 .content {
-
 	background-color: DarkGray;
 	background-size: cover;
 	width: 100%;
@@ -23,18 +26,20 @@
 	background-image:url("../images/space.jpg");
 	background-attachment:fixed;
 	text-align: center;
-	height: 1000px;
+	min-height: 100vh;
+	overflow: auto;
+	padding: 10px;
+	
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
 	.content {
 		min-height: 100vh !important;
 	}
-	
-	#about-img {
-		margin: 80px;
-		top: 100px;
-		width: 100% !important;
+
+	#welcome {
+		margin-top: 100px !important;
+		margin-bottom: 100px !important;
 	}
 	
 	.portfolio-row {
@@ -42,13 +47,33 @@
 		max-width: 1300px;
 		display: flex;
 	}
+
+	.social-btns {
+		margin: 20px;
+	}
+
+	#about-container {
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+
 }
 
+@media screen and (min-width: 992px) {
+	#about img {
+		margin-top: 100px;
+		width: 80% !important;
+	}
+}
+
+
+
 #welcome {
+	display: block;
 	position: relative;
-	top: 200px;
 	text-align:center;
 	color: Yellow;
+	text-shadow: 3px 3px black;
 	margin: 0 auto;
 	max-width:1000px;
 }
@@ -66,23 +91,29 @@ p {
 	font-size: 1.2em;
 }
 
-.social-btns {
+.social-btns-div {
+	display: block;
 	position:relative;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	max-width: 1000px;
+}
+
+.social-btns {
 	font-size: 1.6em;
 	min-width: 200px;
 	text-align: center;
-	top: 250px;
-	margin: 0 auto;
 	margin-top: 20px;
 }
 
 #about {
+	position: relative;
 	background-attachment:fixed;
 	background-size: cover;
-	max-width: 1600px;
 	text-align: justify;
 	padding: 30px;
 	margin: 0;
+
 }
 
 #about-img-div {
@@ -93,9 +124,9 @@ p {
 #about img {
 	position: relative;
 	display: block;
-	width: 300px;
+	width: 200px;
 	height: auto;
-	margin: auto;
+	margin: 0 auto;
 }
 
 #about h1 {
@@ -182,3 +213,9 @@ p {
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
+}
+
+#submit-btn  {
+	width: 100%;
+	margin: 0 auto;
+}
