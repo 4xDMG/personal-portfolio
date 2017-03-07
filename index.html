@@ -11,7 +11,11 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Ubuntu" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/styles.css">
+
+    <script src="https://use.fontawesome.com/90b7afbbfa.js"></script>
+
   </head>
 
   <body>
@@ -19,9 +23,9 @@
       <nav class="navbar navbar-default navbar-fixed-top nav-desktop">
         <img src="./img/daniel-tait-logo.png" id="logo" />
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#home"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
-          <li><a href="#portfolio"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Portfolio</a></li>
-          <li><a href="#contact"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact</a></li>
+          <li class="active home-nav"><a href="#home"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+          <li class="portfolio-nav"><a href="#portfolio"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Portfolio</a></li>
+          <li class="contact-nav"><a href="#contact"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact</a></li>
           <li><a href=""><span class="glyphicon glyphicon-file" aria-hidden="true"></span> CV</a></li>
         </ul>
       </nav>
@@ -31,6 +35,7 @@
         <div class="row">
           <div class="col-md-4">
             <div id="about">
+              <img src="./img/daniel-tait.png" />
               <h2>About Me</h2>
               <h4>Hi, I'm Daniel. I'm obsessed with coding.</h4>
               <p>Currently I live in Brisbane, Australia.</p>
@@ -73,14 +78,17 @@
               <h2>Certifications</h2>
               <ul>
               <h4><a href="https://www.freecodecamp.com/4xdmg/front-end-certification" target=_blank>freeCodeCamp's Front-end Developer Certification</a></h4>
-              <p><a href="https://www.freecodecamp.com" target=_blank>freeCodeCamp</a> teaches Full Stack Javascript development using some of the most popular libraries and frameworks in the JavaScript world. The Front-end Developer Certificate covers HTML, CSS, JavaScript, Bootstrap and jQuery. It requires the completion of algorithm challenges and projects which increase in difficulty as the course progresses.</p>
+              <p><a href="https://www.freecodecamp.com" target=_blank>freeCodeCamp</a> teaches Full Stack Javascript development. The Front-end Developer Certificate covers HTML, CSS, JavaScript, Bootstrap and jQuery and requires the completion of algorithm challenges and projects.</p>
+              <br />
               <h4><a href="https://courses.edx.org/certificates/9bab45497f904ceaa4aeef2ad17b34f5" target=_blank>MITx Introduction to Computer Science and Programming using Python</a></h4>
+              <p>This <a href="https://courses.edx.org/courses/course-v1:MITx+6.00.1x+2T2016/info">course</a> covers the fundamentals concepts of Computer Science and programming. I managed to achieve a grade of 96% overall.</p>
             </div>
           </div>
         </div>
       </div>
-
-      <div id="portfolio" class="content">
+      
+      <span class="anchor" id="portfolio"></span>
+      <div id="portfolio-div" class="content">
         <h1>Portfolio</h1>
         <div class="row portfolio-row">
           <div class="col-md-4">
@@ -163,23 +171,78 @@
           </div>    
         </div>
       </div>
-
-      <div id="contact" class="content">
+      
+      <span class="anchor" id="contact"></span>
+      <div id="contact-div" class="content">
         <h1>Contact Me</h1>
+
+        <div id="form-messages">
+      
+        </div>
+
+        <div id="contact-form">
+          <form id="ajax-contact" method="post" action="mailer.php">
+            <div class="form-group">
+              <label for="name">Name: </label>
+              <input type="text" id="name" name="name" class="form-control" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email: </label>
+              <input type="email" id="email" name="email" class="form-control" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message: </label>
+              <textarea id="message" name="message" class="form-control" rows="20" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <button id="submit-btn" type="submit" class="btn btn-success">Send</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="row social-btns-div">   
+          <div class="col-md-3">
+            <a href ="https://twitter.com/DantooineT" target='new'><button class="btn btn-primary social-btns"><i class="fa fa-twitter center"></i> Twitter</button></a>
+          </div>
+          <div class="col-md-3">
+            <a href ="https://au.linkedin.com/in/daniel-tait-14206a109" target='new'><button class="btn btn-primary social-btns"><i class="fa fa-linkedin"></i> LinkedIn</button></a>
+          </div>
+          <div class="col-md-3">
+            <a href ="https://github.com/4xDMG" target='new'><button class="btn btn-primary social-btns"><i class="fa fa-github"></i> Github</button></a>
+          </div>
+          <div class="col-md-3">
+            <a href ="http://www.freecodecamp.com/4xdmg" target='new'><button class="btn btn-primary social-btns"><i class="fa fa-fire"></i> freeCodeCamp</button></a>
+          </div>
+        </div>
+
       </div>
 
       <nav class="navbar navbar-default navbar-fixed-bottom nav-mobile">
+        <div class="row">
         <ul class="nav navbar-nav">
-          <li><a><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
-          <li><a><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Portfolio</a></li>
-          <li><a><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact</a></li>
-          <li><a><span class="glyphicon glyphicon-file" aria-hidden="true"></span> CV</a></li>
+          <div class="col-xs-3 col-sm-3 center">
+            <li class="active home-nav"><a href="#home"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+          </div>
+          <div class="col-xs-3 col-sm-3 center">
+            <li class="portfolio-nav"><a href="#portfolio"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Portfolio</a></li>
+          </div>
+          <div class="col-xs-3 col-sm-3 center">
+            <li class="contact-nav"><a href="#contact"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact</a></li>
+          </div>
+          <div class="col-xs-3 col-sm-3 center">
+            <li><a><span class="glyphicon glyphicon-file" aria-hidden="true"></span> CV</a></li>
+          </div>
         </ul>
+        </div>
       </nav>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
   </body>
 
 </html>
