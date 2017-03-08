@@ -1,0 +1,109 @@
+.container {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	position: absolute;
+	background-color: black;
+	z-index:-3;
+	text-align: center;
+}
+
+.row {
+	margin-right:0px;
+	margin-left:0px;
+}
+
+#game-board {
+	height: auto;
+	width: 399px;
+	background-color: Ivory;
+	margin: auto;
+	position: relative;
+	top: 40px;
+	text-align: center;
+	color: DimGray;
+	z-index:-2;
+}
+
+.game-square {
+	height: 133px;
+	width: 133px;
+	border: 2px solid Black;
+	margin:auto;
+	z-index:1;
+}
+
+.game-square h1 {
+	font-size: 7em;
+}
+
+.overlay {
+	background-color: rgba(233, 233, 233, 0.5);
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index:2;
+}
+
+#choose-xo {
+	background-color: black;
+	position: relative;
+	margin: auto;
+	margin-top: 100px;
+	padding: 100px;
+	text-align: center;
+	color: Ivory;
+	width: 400px;
+	z-index:3;
+}
+
+#choose-xo h1 {
+	font-size: 6em;
+}
+
+#select-x {
+	cursor: pointer;
+}
+
+#select-o {
+	cursor: pointer;
+}
+
+.taken {
+	cursor: not-allowed;
+}
+
+.not-taken {
+	cursor: pointer;
+}
+
+@media (min-width:800px) {
+	.container {
+		padding: 100px;		
+	}
+	#game-board {
+		top: 0;
+	}
+}
+
+@media (min-width: 600px) {
+	#game-board {
+		width: 600px;
+	}
+	
+	.game-square {
+		height: 200px;
+		width: 200px;
+	}
+	
+	.game-square h1 {
+		font-size: 11em;
+	}
+	
+	#choose-xo {
+		margin-top: 200px;
+	}
+}

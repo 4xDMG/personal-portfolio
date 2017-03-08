@@ -1,0 +1,30 @@
+#container {
+	position: absolute;
+	background-color: DarkGray;
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+}
+
+#weather-data {
+	background-color: rgba(169, 169, 169, 0.6);
+	height:300px;
+	width:250px;
+	margin: 0 auto;
+	position: relative;
+	padding: 15px;
+	text-align: center;
+	margin-top: 20%;
+	font-size: 25px;
+	border-radius: 20px;
+}
+
+.active {
+	color: blue;
+	cursor: pointer;
+}
+
+.inactive {
+	color: LightSteelBlue ;
+	cursor: pointer;
+}

@@ -1,0 +1,103 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Calculatron</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<link href="./css/calculator-styles.css" rel="stylesheet">
+	
+
+    
+  </head>
+  <body>
+	<div class='container'>
+	<div class='row'>
+		<div class='col-md-4 col-md-offset-4'>
+			<div id='calc'>
+				<h1 class='center' id='heading'>Calculatron</h1>
+				<input type="text" disabled id='screen' value="">
+				<div class='row'>
+					<div class='col-xs-2 col-xs-offset-2'>
+						<button class='calc-btn clear-btn' id='oper-ac'>AC</button>
+					</div>
+					<div class='col-xs-2'>
+						<button class='calc-btn clear-btn' id='oper-ce'>CE</button>
+					</div>
+					<div class='col-xs-2'>
+						<button class='calc-btn oper-btn' id='oper-percent'>%</button>
+					</div>
+					<div class='col-xs-2'>
+						<button class='calc-btn oper-btn' id='oper-divide' operator='/'>&divide;</button>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='col-xs-2 col-xs-offset-2'>
+						<button class='calc-btn num-btn' id='num-9' number='9'>9</button>
+					</div>
+					<div class='col-xs-2'>
+						<button class='calc-btn num-btn' id='num-8' number='8'>8</button>
+					</div>
+					<div class='col-xs-2'>
+						<button class='calc-btn num-btn' id='num-7' number='7'>7</button>
+					</div>
+					<div class='col-xs-2'>
+						<button class='calc-btn oper-btn' id='oper-times' operator='*'>&times;</button>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='col-xs-2 col-xs-offset-2'>
+						<button class='calc-btn num-btn' id='num-6' number='6'>6</button>
+					</div>
+					<div class='col-xs-2'>
+						<button class='calc-btn num-btn' id='num-5' number='5'>5</button>
+					</div>
+					<div class='col-xs-2'>
+						<button class='calc-btn num-btn' id='num-4' number='4'>4</button>
+					</div>
+					<div class='col-xs-2'>
+						<button class='calc-btn oper-btn' id='oper-minus' operator='-'>&minus;</button>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='col-xs-2 col-xs-offset-2'>
+						<button class='calc-btn num-btn' id='num-3' number='3'>3</button>
+					</div>
+					<div class='col-xs-2'>
+						<button class='calc-btn num-btn' id='num-2' number='2'>2</button>
+					</div>
+					<div class='col-xs-2'>
+						<button class='calc-btn num-btn' id='num-1' number='1'>1</button>
+					</div>
+					<div class='col-xs-2'>
+						<button class='calc-btn oper-btn' id='oper-plus' operator='+'>&plus;</button>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='col-xs-2 col-xs-offset-2'>
+						<button class='calc-btn num-btn' id='num-0' number='0'>0</button>
+					</div>
+					<div class='col-xs-2'>
+						<button class='calc-btn num-btn' id='num-dec' number='.'>.</button>
+					</div>
+					<div class='col-xs-4'>
+						<button class='calc-btn' id='equals-btn'>=</button>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<h3><a href='https://github.com/4xDMG/freeCodeCamp/tree/master/Front-End-Development-Projects/Calculator' target=_blank>See source code on GitHub</a></h3>
+	</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="./js/calculator-js.js"></script>
+	
+  </body>
+</html>
